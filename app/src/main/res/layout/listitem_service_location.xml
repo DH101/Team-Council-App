@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Dean Hunter, Student Number: 16027456 -->
+<!-- On 26/03/2018 -->
+<!-- layout for service locations activity -->
+
+<!-- Relative layout to position the card view of each item -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/service_location_layout"
+    style="@style/list_item_layout">
+
+    <!-- Card view for each item in service locations list -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/service_locations_card_view"
+        style="@style/list_item_card_view"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="15dp">
+
+        <!-- Relative layout to position widgets on the card view -->
+        <RelativeLayout
+            style="@style/match_parents">
+
+            <!-- Image view for icon of service location -->
+            <!-- REFERENCE - Made use of link below to create icon
+             https://romannurik.github.io/AndroidAssetStudio/ -->
+            <!-- REFERENCE - Made use of link for pinpoint icon in the view on map icon
+             https://material.io/icons/#ic_place -->
+            <ImageView
+                style="@style/list_item_side_image_view"
+                android:id="@+id/services_locations_icon"
+                android:contentDescription="@string/service_icon_description"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="10dp" />
+
+            <!-- Text view for title of service location -->
+            <TextView
+                android:id="@+id/services_locations_title"
+                android:layout_toRightOf="@id/services_locations_icon"
+                android:layout_toEndOf="@id/services_locations_icon"
+                style="@style/text_view"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="20sp" />
+
+            <!-- Text view for description of service location -->
+            <TextView
+                android:id="@+id/services_locations_description"
+                style="@style/text_view"
+                android:layout_below="@id/services_locations_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toEndOf="@id/services_locations_icon"
+                android:layout_toRightOf="@id/services_locations_icon"
+                android:textSize="15sp" />
+
+            <!-- Button to lead user to service location on map -->
+            <Button
+                android:id="@+id/services_locations_button"
+                style="@style/match_parent_width"
+                android:layout_marginTop="15dp"
+                android:text="@string/view"
+                android:background="@drawable/rounded_bottom_button"
+                android:theme="@style/PrimaryFlatButton"
+                android:layout_below="@id/services_locations_icon"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

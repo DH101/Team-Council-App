@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "851043244180",
+    "firebase_url": "https://seaton-valley-c1fdf.firebaseio.com",
+    "project_id": "seaton-valley-c1fdf",
+    "storage_bucket": "seaton-valley-c1fdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851043244180:android:92a4f56e930d6450",
+        "android_client_info": {
+          "package_name": "com.team9.seatonvalley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851043244180-g4cr97nhuamjq58o4s7n46sml57vobbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

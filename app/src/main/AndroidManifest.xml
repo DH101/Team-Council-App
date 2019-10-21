@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team9.seatonvalley">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".SeatonValleyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+
+             ADD API KEY INSIDE "android:value"
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="" />
+
+        <activity
+            android:name=".ContactUsActivity"
+            android:label="Contact Us"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ReportIssuesActivity"
+            android:label="@string/report_issue_title"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ReportIssueFormActivity"
+            android:label="Submit Form"
+            android:parentActivityName=".ReportIssuesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.ReportIssuesActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ServicesActivity"
+            android:label="@string/service_title"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ServicePlaygroundLocationsActivity"
+            android:label="@string/service_location_title"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ServicesActivity" />
+        </activity>
+        <activity
+            android:name=".ServiceAllotmentLocationsActivity"
+            android:label="@string/service_location_title"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ServicesActivity" />
+        </activity>
+        <activity
+            android:name=".ServiceLocationPlaygroundMapActivity"
+            android:label="@string/service_location_map_title"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ServicePlaygroundLocationsActivity" />
+        </activity>
+        <activity
+            android:name=".ServiceLocationAllotmentMapActivity"
+            android:label="@string/service_location_map_title"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ServiceAllotmentLocationsActivity" />
+        </activity>
+        <activity
+            android:name=".TweetsActivity"
+            android:label="@string/tweets_title"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+        <activity
+            android:name=".FuturesActivity"
+            android:exported="true"
+            android:label="Futures"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".FuturePDFViewer"
+            android:label="@string/pdf_viewer_title"
+            android:parentActivityName=".FuturesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.FuturesActivity" />
+        </activity>
+        <activity
+            android:name=".MapMarkerActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".ContactUsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.team9.seatonvalley.FuturesActivity" />
+        </activity>
+        <activity android:name=".LatestActivity"
+            android:parentActivityName=".HomeActivity">
+        </activity>
+    </application>
+
+</manifest>

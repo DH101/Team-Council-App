@@ -1,0 +1,162 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Dyslexia friendly theme. -->
+    <!-- Inherit from default theme. -->
+    <style name="DyslexiaFriendly" parent="AppTheme">
+        <!-- Change background colour -->
+        <item name="android:windowBackground">@color/colorDyslexiaBackground</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Primary flat button theme -->
+    <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
+
+        <!-- Set color of text to be yellow and make the style to be borderless -->
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="colorAccent">@color/colorWhite</item>
+
+    </style>
+
+    <!-- Match parent layout theme -->
+    <style name="match_parents">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+    </style>
+
+
+    <!-- Match parent width layout theme -->
+    <style name="match_parent_width">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <!-- Wrap the content theme -->
+    <style name="wrap_contents">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+
+    <!-- Tool bar theme -->
+    <!-- Inherit from match parent width -->
+    <style name="tool_bar" parent="match_parent_width">
+
+        <!-- Minimum height is the size of default action bar -->
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <!-- Color of tool bar -->
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+
+    <!-- Content/body layout theme -->
+    <!-- Inherit from match parents -->
+    <style name="content" parent="match_parents">
+
+        <!-- Make default background color to be light pale blue -->
+        <item name="android:windowBackground">@color/colorLightPaleBlue</item>
+
+
+    </style>
+
+    <!-- Recycler view layout theme -->
+    <!-- Inherit from match parents -->
+    <style name="recyclerView" parent="match_parents">
+
+        <!-- make lists vertical and scrollable -->
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+
+    </style>
+
+    <!-- List item inside a list theme -->
+    <!-- Inherit from match parent width -->
+    <style name="list_item_layout" parent="match_parent_width">
+
+        <!-- Give space between items in list -->
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+    </style>
+
+
+    <!-- List item card view layout theme -->
+    <!-- Inherit from match parent width -->
+    <style name="list_item_card_view" parent="match_parent_width">
+
+        <!-- Center horizontally and give space the other card view items in list-->
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <!-- Clickable to show they lead to other activities -->
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <!-- List item image view for services activity theme -->
+    <!-- Inherit from wrap contents -->
+    <style name="list_item_side_image_view" parent="wrap_contents">
+
+        <!-- Center the image, provide content description and the image to be used -->
+        <item name="android:scaleType">center</item>
+        <item name="android:contentDescription">@string/service_icon_description</item>
+        <item name="android:src">@drawable/ic_services_find_on_map</item>
+
+    </style>
+
+    <!-- List item image view for service location activity theme -->
+    <!-- Inherit from match parent width -->
+    <style name="list_item_services_image_view" parent="match_parent_width">
+
+        <!-- Set space above the image and center it -->
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:scaleType">center</item>
+
+    </style>
+
+    <!-- Text view theme -->
+    <!-- Inherit from match parent width -->
+    <style name="text_view" parent="match_parent_width">
+
+        <!-- Make text black and add space below the text -->
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_marginBottom">10dp</item>
+
+    </style>
+
+    <!-- Set content style -->
+    <!-- Inherit from match parents theme -->
+    <style name="activity_layout" parent="match_parents">
+
+        <!-- Set the background color to a light pale blue -->
+        <item name="android:windowBackground">@color/colorLightPaleBlue</item>
+
+
+    </style>
+
+
+</resources>

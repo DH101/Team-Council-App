@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Alex Bewley Taylor on 26/03/2018 -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    style="@style/activity_layout"
+    tools:context="com.team9.seatonvalley.ReportIssueFormActivity">
+
+    <!-- Appbar to override native Appbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- toolbar for application so user can navigate throughout app -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/report_issue_form_toolbar"
+            style="@style/tool_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <!-- allow scroll -->
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Create text field for name -->
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/your_name"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- Allow text field to be edited by user -->
+            <EditText
+                android:id="@+id/their_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+            <!-- Create text field for email -->
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="26dp"
+                android:text="@string/email_address"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/their_name" />
+            <!-- Allow text field to be edited by user -->
+            <EditText
+                android:id="@+id/their_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email" />
+            <!-- Create text field for phone -->
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="26dp"
+                android:text="@string/phone_number"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/their_email" />
+            <!-- Allow text field to be edited by user -->
+            <EditText
+                android:id="@+id/their_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone" />
+            <!-- Create text field for issue -->
+            <TextView
+                android:id="@+id/describe_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="26dp"
+                android:text="@string/describe_issue"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/their_phone" />
+
+            <!-- Allow text field to be edited by user -->
+            <EditText
+                android:id="@+id/their_issue_and_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:height="180dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/describe_issue" />
+            <!-- define layout of the page -->
+            <LinearLayout
+                android:id="@+id/checkbox_confirm_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/their_issue_and_location">
+                <!-- Create checkbox so user can confirm they read the privacy policy -->
+                <CheckBox
+                    android:id="@+id/confirm_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" />
+                <!-- text to go with button -->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <!-- Create a button to trigger the send -->
+            <Button
+                android:id="@+id/post_issue"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/curved_button"
+                android:text="@string/report_issue"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkbox_confirm_policy" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

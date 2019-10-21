@@ -1,0 +1,104 @@
+/*  Team 9 Seaton Valley App Advertisement Website
+	Lead Web Designer:		Alexander Newton-Green 160313428
+    Junior Web Designers:	Adam Barron 160212899
+							Ruth Plant 160389906
+*/
+
+/* Formats the main body of the website */
+body {
+    padding-top: 55px;
+    margin: auto;
+    position: relative;
+    background: #FFFFFF;
+}
+
+/* Changes various text colours */
+h2 {
+    color: #8A2C88;
+}
+
+h4 {
+    color: #C940C6;
+}
+
+a:link, a:visited {
+    color: #7D287B;
+}
+
+a:hover, a:active {
+    color: purple;
+}
+
+/* Formats text on the jumbotron */
+.jumbotron {
+    text-align: center;
+    color: #7D287B;
+    margin-bottom: 0;
+}
+
+/* Seaton valley purple */
+.bg-seaton-valley {
+    background-color: #7D287B;
+}
+
+/* Add padding to Introduction */
+#introduction {
+    padding-top: 76px;
+    margin-top: -56px;
+}
+
+/* Add spacing to Features */
+#features {
+    padding-top: 76px;
+    margin-top: -56px;
+}
+
+/* Parallax effect */
+.parallax {
+    background-image: url("../img/background.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("../img/background3.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Formats bullet point images */
+.bullet_image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Formats the footer */
+.footer, h2.footer {
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    background-color: #7D287B;
+    text-align: center;
+    color: white;
+}
+
+/* Formats links in footer */
+a:link.no-link-css, a:visited.no-link-css, a:hover.no-link-css, a:active.no-link-css {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Formats spacing for rap and user guide */
+#guide-and-rap {
+    padding-top: 76px;
+    margin-top: -56px;
+    padding-bottom: 20px;
+}

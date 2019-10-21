@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Andreea Stirbu on 25/03/2018 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/list_item_layout">
+
+    <android.support.v7.widget.CardView
+        style="@style/list_item_card_view"
+        android:id="@+id/futures_card_view"
+        app:cardCornerRadius="@dimen/corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:cardMaxElevation="@dimen/card_max_elevation"
+        android:layout_marginBottom="@dimen/margin_bottom_card">
+
+        <RelativeLayout
+            style="@style/match_parents">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/future_image_width"
+                android:layout_height="@dimen/future_image_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/futures" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/image"
+                android:layout_toEndOf="@id/image"
+                android:gravity="center"
+                android:text="@string/title"
+                android:textColor="@color/colorLightPurple"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:scrollbars="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="left"
+                android:layout_above="@id/pdfDisplay"
+                android:layout_toRightOf="@id/image"
+                android:layout_toEndOf="@id/image"
+                android:text="@string/description" />
+
+            <Button
+                android:background="@drawable/rounded_bottom_button"
+                style="@style/match_parent_width"
+                android:layout_below="@id/image"
+                android:text="@string/view"
+                android:theme="@style/PrimaryFlatButton"
+                android:id="@+id/pdfDisplay" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

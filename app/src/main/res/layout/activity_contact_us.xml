@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Dalton Yates, Student Number: 15030164 on 25/03/2018 -->
+<!-- Extended by Adam Barron -->
+<!-- layout for ContactUs activity -->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.team9.seatonvalley.ContactUsActivity">
+
+
+    <!-- Appbar to override native Appbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- toolbar for application so user can navigate throughout app -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/contact_us_toolbar"
+            style="@style/tool_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- sets scroll view for page -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Contact info text -->
+            <TextView
+                android:id="@+id/contactInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/contact_us"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <!-- Phone header text -->
+            <TextView
+                android:id="@+id/council_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/council_phone"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contactInfo" />
+
+            <!-- Phone content text -->
+            <TextView
+                android:id="@+id/council_phone_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:autoLink="phone"
+                android:text="@string/council_phone_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_phone" />
+
+            <!-- Email header text -->
+            <TextView
+                android:id="@+id/council_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:autoLink="email"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/council_email"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_phone_content" />
+
+            <!-- Email content text -->
+            <TextView
+                android:id="@+id/council_email_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:autoLink="email"
+                android:text="@string/council_email_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_email" />
+
+            <!-- Address header text -->
+            <TextView
+                android:id="@+id/council_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/council_address"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_email_content" />
+
+            <!-- Address content text -->
+            <TextView
+                android:id="@+id/council_address_content"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/council_address_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_address" />
+
+            <!-- Opening times header text -->
+            <TextView
+                android:id="@+id/council_opening_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/council_opening_times"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_address_content" />
+
+            <!-- Opening times content text -->
+            <TextView
+                android:id="@+id/council_opening_times_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/council_opening_times_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_opening_times" />
+
+            <!-- Button to view map -->
+            <ImageButton
+                android:id="@+id/findOnMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="28dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/find_on_map"
+                android:onClick="findOnMap"
+                android:scaleType="center"
+                android:src="@drawable/ic_services_find_on_map"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_address" />
+
+            <!-- Form header text -->
+            <TextView
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/form"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/council_opening_times_content" />
+
+            <!-- name text -->
+            <TextView
+                android:id="@+id/your_name_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact_form_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/form" />
+
+            <!-- name edit -->
+            <EditText
+                android:id="@+id/your_name"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_name_t" />
+
+            <!-- email text -->
+            <TextView
+                android:id="@+id/your_email_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact_form_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_name" />
+
+            <!-- email edit -->
+            <EditText
+                android:id="@+id/your_email"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_email_t" />
+
+            <!-- subject text -->
+            <TextView
+                android:id="@+id/your_subject_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact_form_subject"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_email" />
+
+            <!-- subject edit -->
+            <EditText
+                android:id="@+id/your_subject"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_subject_t" />
+
+            <!-- message text -->
+            <TextView
+                android:id="@+id/your_message_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact_form_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_subject" />
+
+            <!-- message edit -->
+            <EditText
+                android:id="@+id/your_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:height="180dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_message_t" />
+
+            <!-- send button -->
+            <Button
+                android:id="@+id/post_message"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/rounded_button"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/contact_form_button"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/your_message" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+

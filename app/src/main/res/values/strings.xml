@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">Seaton Valley Community Council</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="version_number">1.0</string>
+    <string name="website">http://homepages.cs.ncl.ac.uk/2017-18/CSC2022/Team09/website/</string>
+
+    <!-- Strings related to futures -->
+    <string name="seaton_valley_futures_title">Futures</string>
+
+    <!-- String related to latest -->
+    <string name="seaton_valley_latest_title">Latest</string>
+
+    <!-- Strings related to issue forms -->
+    <string name="your_name">Your name (required)</string>
+    <string name="email_address">Email address (required)</string>
+    <string name="phone_number">Phone number (required)</string>
+    <string name="report_issue">Report issue</string>
+
+    <string name="describe_issue">Describe the issue, including location if possible (required)</string>
+    <string name="submit">Submit</string>
+
+    <string name="report_issue_title">Report Issue</string>
+    <string name="report_dog_title">Report Dog Fouling</string>
+    <string name="submit_title">Submit Issue</string>
+
+    <!-- Strings related to the Contact Us page -->
+    <string name="contact_us_title">Contact Us</string>
+    <string name="contact_us">You can contact the council in person during opening times, by post, telephone or email.</string>
+    <string name="council_email">Email us</string>
+    <string name="council_email_content">clerk@seatonvalleycommunitycouncil.gov.uk</string>
+    <string name="council_phone">Call us</string>
+    <string name="council_phone_content">01912379870</string>
+    <string name="council_address">Find Us</string>
+    <string name="council_address_content">20&#8211;22 Astley Road\nSeaton Delaval\nNorthumberland\nNE25 0DG</string>
+    <string name="council_opening_times">Opening Times</string>
+    <string name="council_opening_times_content">Monday - Thursday\n8:30am - 4:30pm</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="find_on_map">Find on map</string>
+    <string name="form">Form</string>
+    <string name="contact_form_name">Your Name (Required):</string>
+    <string name="contact_form_email">Your Email (Required):</string>
+    <string name="contact_form_subject">Subject (Required):</string>
+    <string name="contact_form_message">Your Message (Required):</string>
+    <string name="contact_form_button">Send</string>
+    <string name="contact__name_error">Enter Your Name</string>
+    <string name="contact__email_error">Invalid Email</string>
+    <string name="contact__subject_error">Enter Your Subject</string>
+    <string name="contact__message_error">Enter Your Message</string>
+    <string name="contact__email_sent">Email Sent</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="settings_title">Settings</string>
+
+    <!-- Settings for user details -->
+    <string name="pref_header_user_details">Your Details</string>
+
+    <string name="pref_title_display_name">Your name</string>
+    <string name="pref_key_display_name">user_full_name</string>
+
+    <string name="pref_title_email_address">Your email address</string>
+    <string name="pref_key_email_address">user_email</string>
+
+    <!-- Settings for accessibility -->
+    <string name="pref_header_accessibility">Accessibility</string>
+
+    <string name="pref_title_improved_readability_background">Enable yellow text background</string>
+    <string name="pref_description_improved_readability_background">Improves readability for those
+        with conditions such as dyslexia.
+    </string>
+    <string name="pref_key_improved_readability_background">readability</string>
+
+    <!-- About section -->
+    <string name="pref_header_about">About</string>
+    <!-- Privacy policy -->
+    <string name="pref_title_privacy_policy">Privacy policy</string>
+    <string name="pref_key_privacy_policy">privacy</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="pref_description_privacy_policy">View our full privacy statement</string>
+    <string name="privacy_policy_text">Privacy Policy\n\nThis privacy policy sets out how we will use and protects
+        the information which you submit when using this application.\n\nWe are committed to ensure
+        your privacy is protected. When we ask for information, it will only be used in accordance
+        with this privacy statement.\n\nWe may change our policy over time, please check to ensure you
+        are happy with the changes.\n\nSecurity\n\nWe are committed to ensure your information is secure.
+        Your information will be stored in a database at a location which has put in place physical,
+        electronic and managerial procedures for your information\'s security.\n\nCollecting your
+        information\n\nWe will not sell or lease your information but we will distribute when
+        requested to Seaton Valley Community Council.\n\nYou have right to change and delete
+        your personal information from this application. You may also request details of your
+        information which we hold under the Data Protection Act 1998. If you would like a copy of
+        this information, email team9@gmail.com.
+    </string>
+    <string name="go_back">Go back</string>
+    <!-- About -->
+    <string name="pref_title_website">Website</string>
+    <string name="pref_description_website">Visit our website to learn more about the app</string>
+    <string name="pref_about_text">
+        Seaton Valley Community Council\n\nFor citizens to access services from Seaton Valley Community Council\n\nVersion: 1.0
+    </string>
+
+    <!-- Reset Data -->
+    <string name="pref_title_reset_data">Reset data</string>
+    <string name="pref_description_reset_data">Clear your name and email address</string>
+    <string name="pref_key_reset_data">reset</string>
+    <!-- Confirmation dialog -->
+    <string name="confirmation_reset_data_title">Reset data?</string>
+    <string name="confirmation_dialog">This will erase your name and email address, are you sure?</string>
+    <string name="confirm">Yes</string>
+    <string name="cancel">Cancel</string>
+
+
+    <!-- labels for services activities -->
+    <string name="service_title">Services</string>
+    <string name="service_location_title">Service Location Title</string>
+    <string name="service_location_map_title">Service Location Map Title</string>
+
+    <!-- Service Types -->
+    <!-- Playgrounds -->
+    <string name="playground_title">Playgrounds</string>
+    <string name="playground_description">Find the location of our playgrounds</string>
+    <string name="playground_icon_description">Playground Icon</string>
+    <!-- Allotments -->
+    <string name="allotment_title">Allotments</string>
+    <string name="allotment_description">Find the location of our allotments</string>
+    <string name="allotment_icon_description">Playground Icon</string>
+
+    <!-- Allotment Street Locations -->
+    <string name="location_ancroft_road_street">Ancroft Road</string>
+    <string name="location_baxter_place_street">Baxter Place</string>
+    <string name="location_beresford_road_street">Beresford Road</string>
+    <string name="location_dartford_close_street">Dartford Close</string>
+    <string name="location_dene_top_street">Dene Top</string>
+    <string name="location_gloria_avenue_street">Gloria Avenue</string>
+    <string name="location_hall_farm_street">Hall Farm</string>
+    <string name="location_memorial_playing_fields_street">Memorial Playing Fields</string>
+    <string name="location_seaton_terrace_street">Seaton Terrace</string>
+    <string name="location_seghill_road_street">Seghill Road</string>
+    <string name="location_victoria_close_street">Victoria Close</string>
+    <string name="location_west_terrace_street">West Terrace</string>
+    <string name="location_coppergate_street">Coppergate</string>
+
+    <!-- Villages -->
+    <string name="location_seaton_delaval_village">Seaton Delaval</string>
+    <string name="location_seaton_sluice_village">Seaton Sluice</string>
+    <string name="location_new_hartley_village">New Hartley</string>
+    <string name="location_holywell_village">Holywell</string>
+    <string name="location_seghill_village">Seghill</string>
+
+    <!-- Playground Locations -->
+    <string name="location_seaton_crescent_playground">Seaton Crescent Play Area</string>
+    <string name="location_seaton_cresent_street">Seaton Crescent, Holywell</string>
+    <string name="location_new_hartley_playground">New Hartley Play Park</string>
+    <string name="location_st_michaels_avenue_street">St Michaels Avenue, New Hartley</string>
+    <string name="location_new_hartley_welfare_play_area">New Hartley Welfare Play Area</string>
+    <string name="location_hallington_drive_play_area">Hallington Drive Play Area</string>
+    <string name="location_mitford_avenue">Mitford Avenue</string>
+    <string name="location_seaton_sluice_dunes_play_area">Seaton Sluice Dunes Play Area</string>
+    <string name="location_links_road_seaton_sluice_street">Links Road, Seaton Sluice</string>
+    <string name="location_seaton_sluice_welfare_young_persons_play_park">Seaton Sluice Welfare
+    Young Persons Play Park</string>
+    <string name="location_beresford_road_seaton_sluice_street">Beresford Road,
+        Seaton Sluice</string>
+    <string name="location_hartley_square_play_area">Hartley Square</string>
+    <string name="location_burnlea_gardens_play_area">Burnlea Gardens Play Area</string>
+    <string name="location_crescent_play_area">Crescent Play Area</string>
+    <string name="location_the_crescent_seghill_street">The Crescent, Seghill</string>
+    <string name="location_seghill_welfare_muga_and_skate_park">Seghill Welfare MUGA and
+    Skate Park</string>
+    <string name="location_front_street_seghill_street">Front Street, Seghill</string>
+
+    <!-- View Guidance For User  -->
+    <string name="view">View</string>
+
+    <!-- Content Descriptions For Drawable -->
+    <string name="directions">Directions</string>
+    <string name="find_service_location">find service location</string>
+    <string name="service_icon_description">Service Icon</string>
+
+    <!-- If No Locations for Service Found -->
+    <string name="locations_not_found">Sorry, location not found. Please go back</string>
+
+    <!-- No Service Location Title Found -->
+    <string name="no_service_location_title">No service location title</string>
+    <!-- No Service Title Found -->
+    <string name="no_service_title">No service title</string>
+
+    <!-- Twitter keys -->
+    <string name="CONSUMER_KEY">fl1s7wAHAGL9oFuAhyFhAnywg</string>
+    <string name="CONSUMER_SECRET">2Aiis521Tx29iGMHAvETGTsKEZjLMqowt53XHKK6fYjsKjd2ZP</string>
+
+    <!-- When tweets/futures/events and news are not available -->
+    <string name="empty_list_when_network_needed">Not available.\n\n
+        Please check you are connected to the internet and if you are connected or not,
+        go back to try again</string>
+
+    <!-- Tweets title -->
+    <string name="tweets_title">Tweets</string>
+
+    <!-- Report issues -->
+
+    <!-- Report issue titles -->
+    <string name="dog_fouling_title">Dog Fouling</string>
+    <string name="littering_title">Littering</string>
+    <string name="bus_shelters_title">Bus Shelters</string>
+
+    <!-- Report issue description -->
+    <string name="dog_fouling_description">Report dog fouling that takes places on highway or public
+        places</string>
+    <string name="littering_description">Report any instances of litter found in the street or other
+        public places</string>
+    <string name="bus_shelters_description">Report any instances of damaged bus shelters in the
+    local area</string>
+    <string name="report_it_playground_description">Report any instances of damage to playgrounds or
+    incidents at a playground</string>
+
+    <string name="report_issue_icon_description">Report It Icon</string>
+
+    <!-- Report issue form title-->
+    <string name="report_issue_form_title">Report Issue Form</string>
+
+    <!-- Report issue title not available -->
+    <string name="no_report_title">No Report Issue Title</string>
+
+    <!-- Report issue no name -->
+    <string name="no_name">Please Enter Your Name</string>
+
+    <!-- Report issue invalid email -->
+    <string name="error_email">Invalid Email, Please Enter A Valid Email</string>
+
+    <!-- Report issue no email -->
+    <string name="no_email">Please Enter Your Email</string>
+
+    <!-- Report issue no phone number -->
+    <string name="no_phone">Please Enter Your Telephone Or Mobile Number</string>
+
+    <!-- Report issue no description -->
+    <string name="no_description">Please Enter Your Issue And If Possible, Location</string>
+
+    <!-- Asked user they have read privacy policy -->
+    <string name="privacy_policy">Please confirm you have read our privacy policy in settings</string>
+
+    <!-- Not checked privacy policy -->
+    <string name="error_privacy_policy">Please read the privacy policy found in settings</string>
+
+    <!-- Successful -->
+    <string name="successful_title">Successful!</string>
+    <string name="successful_notify_user"> Your issue has been sent to the council</string>
+    <string name="successful_next_step_for_user">You will receive an update from Seaton Valley
+        community Council by email or phone</string>
+
+    <!-- OK for button -->
+    <string name="ok">OK</string>
+
+    <!-- Pdf viewer title -->
+    <string name="pdf_viewer_title">PDF Viewer</string>
+
+    <!-- future title-->
+    <string name="future_title">Future</string>
+
+    <!-- title -->
+    <string name="title">Title</string>
+
+    <!-- description -->
+    <string name="description">description</string>
+
+    <!-- Strings for Latest -->
+    <string name="event_hint">Search events</string>
+    <string name="news_hint">Search news</string>
+    <string name="date">Date</string>
+    <string name="read_more">READ MORE</string>
+
+</resources>

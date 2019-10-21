@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Andreea Stirbu on 21/03/2018 -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_bar_futures"
+    style="@style/activity_layout"
+    tools:context=".FuturesActivity">
+
+    <!-- Appbar to override native Appbar -->
+    <android.support.design.widget.AppBarLayout
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- toolbar for application so user can navigate throughout app -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/futures_toolbar"
+            style="@style/tool_bar"
+            android:elevation="@dimen/toolbar_elevation"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Making the screen scrollable -->
+    <ScrollView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_list_when_network_needed"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"/>
+    </ScrollView>
+
+    <android.support.v7.widget.RecyclerView
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    style="@style/recyclerView"
+    android:id="@+id/issueRecyclerView">
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.design.widget.CoordinatorLayout>

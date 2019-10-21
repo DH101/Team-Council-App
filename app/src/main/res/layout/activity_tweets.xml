@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Adrienne Hui on 26/04/2018 -->
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <android.support.design.widget.AppBarLayout
+                    style="@style/match_parent_width"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/services_toolbar"
+                            style="@style/tool_bar"
+                            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </android.support.design.widget.AppBarLayout>
+
+                <ListView
+                    android:id="@id/android:list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:divider="@color/colorDividerGray"
+                    android:dividerHeight="1dp"/>
+
+                <ScrollView
+                    android:id="@id/android:empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/empty_list_when_network_needed"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:gravity="center"/>
+
+                </ScrollView>
+
+        </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,36 @@
+<!-- Created by Adam Barron on 27/11/2017_-->
+<!-- Extended by Joe Dudgeon on 20/03/2018 -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/activity_layout"
+    tools:context=".HomeActivity" >
+    <!-- Set up toolbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_bar"
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/tool_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- Set up grid view for the buttons to go -->
+    <GridView
+        android:id="@+id/activity_menu_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="30dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

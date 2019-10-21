@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <!-- Dimensions for cardViews -->
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="card_elevation">10dp</dimen>
+    <dimen name="card_max_elevation">15dp</dimen>
+    <dimen name="margin_bottom_card">20dp</dimen>
+
+    <!-- Dimensions for Views in the future cardView -->
+    <dimen name="future_image_width">160dp</dimen>
+    <dimen name="future_image_height">220dp</dimen>
+
+    <!-- Dimensions for Latest activity -->
+    <dimen name="margin_top">100dp</dimen>
+    <dimen name="searchView_height">50dp</dimen>
+    <dimen name="padding_latest_view">5dp</dimen>
+    <dimen name="margin_latest_view">5dp</dimen>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Dean Hunter, Student Number: 16027456 -->
+<!-- On 26/03/2018 -->
+<!-- layout for service locations activity -->
+
+<!-- Coordinator layout to coordinate different parts on activity -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_bar_service_locations"
+    style="@style/activity_layout"
+    tools:context=".ServicePlaygroundLocationsActivity">
+
+    <!-- Appbar to override native Appbar -->
+    <android.support.design.widget.AppBarLayout
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- toolbar for application so user can navigate throughout app -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/service_locations_toolbar"
+            style="@style/tool_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- recycler view for list of card view for service locations -->
+    <android.support.v7.widget.RecyclerView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/recycler_view_service_locations"
+        style="@style/recyclerView" />
+
+</android.support.design.widget.CoordinatorLayout>

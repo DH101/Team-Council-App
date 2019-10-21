@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Dalton Yates, Student Number: 15030164 on 29/03/2018 -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_bar_map_marker_locations"
+    style="@style/match_parents"
+    tools:context=".MapMarkerActivity">
+
+    <!-- Appbar to override native Appbar -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout3"
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- toolbar for application so user can navigate throughout app -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/contact_us_map_toolbar"
+            style="@style/tool_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map_marker"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.team9.seatonvalley..MapMarkerActivity"
+        tools:showIn="@layout/activity_map_marker"
+        map:cameraTilt="30"
+        map:cameraZoom="18"
+        map:mapType="hybrid"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true" />
+
+    <!-- added floating action button at bottom right of screen to let user find directions -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/map_directions_fab"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:contentDescription="@string/directions"
+        android:scaleType="center"
+        android:src="@drawable/ic_directions"
+        app:backgroundTint="@color/colorFab"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/appBarLayout3" />
+
+    <!-- added floating action button beside directions button horizontally to let user
+    find the marker if they lose it when scrolling -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/map_location_fab"
+        style="@style/Widget.AppCompat.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:contentDescription="@string/find_service_location"
+        android:scaleType="center"
+        android:src="@drawable/ic_pin_drop"
+        app:backgroundTint="@color/colorFab"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Dean Hunter, Student Number: 16027456 -->
+<!-- on 30/03/2018 -->
+<!-- layout for service location map activity -->
+
+<!-- Coordinator layout to coordinate different parts on activity -->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_bar_map_service_locations"
+    style="@style/match_parents"
+    tools:context=".ServiceLocationPlaygroundMapActivity">
+
+    <!-- Appbar to override native Appbar -->
+    <android.support.design.widget.AppBarLayout
+        style="@style/match_parent_width"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!-- toolbar for application so user can navigate throughout app -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/service_location_map_toolbar"
+            style="@style/tool_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- fragment for map, has default camera tilt, zoom and enables the compass to change the
+     tilt, rotate, scroll, tilt, and zoom -->
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ServiceLocationPlaygroundMapActivity"
+        tools:showIn="@layout/activity_service_location_map"
+        map:cameraTilt="30"
+        map:cameraZoom="18"
+        map:mapType="hybrid"
+        map:uiCompass="true"
+        map:uiRotateGestures="true"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true" />
+
+
+        <!-- added floating action button at bottom right of screen to let user find directions -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/directions_fab"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_directions"
+            android:contentDescription="@string/directions"
+            android:scaleType="center"
+            app:backgroundTint="@color/colorFab"
+            app:fabSize="normal" />
+
+        <!-- added floating action button beside directions button horizontally to let user
+        find the marker if they lose it when scrolling -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/find_location_fab"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginEnd="130dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_pin_drop"
+            android:contentDescription="@string/find_service_location"
+            android:scaleType="center"
+            app:backgroundTint="@color/colorFab"
+            app:fabSize="normal" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
