@@ -1,8 +1,7 @@
 # Team-Council-App
 Team council app
 
-This project was a team project as part of software engineering team project module which I took 
-whilst at university. 
+This project was a team project as part of software engineering team project module whilst at university. 
 
 Any files with my name as author is the code I wrote.
 
